@@ -12,18 +12,24 @@ export default defineConfig({
   menus: {
     '/main': [
       {
-        title: '概览',
-        children: ['main/guide.md'],
-      },
-      {
         title: '基本概念',
-        children: ['main/pkg-structure.md', 'main/workloop.md'],
+        children: [
+          'main/macro-structure.md',
+          'main/workloop.md',
+          'main/object-structure.md',
+        ],
       },
       {
         title: '运行核心',
         children: [
+          'main/reconciler-workflow.md',
           'main/bootstrap.md',
+          'main/priority.md',
           'main/scheduler.md',
+          'main/fibertree-prepare.md',
+          'main/fibertree-create.md',
+          'main/fibertree-update.md',
+          'main/fibertree-commit.md',
           'main/render.md',
           'main/commit.md',
           'main/update.md',
@@ -31,8 +37,19 @@ export default defineConfig({
         ],
       },
       {
+        title: '数据管理',
+        children: [
+          'main/state-effects.md',
+          'main/hook-summary.md',
+          'main/hook-state.md',
+          'main/hook-effect.md',
+          'main/context.md',
+        ],
+      },
+      {
         title: '其他',
         children: [
+          'main/state-effects.md',
           'main/hook.md',
           'main/error-boundaries.md',
           'main/context.md',
