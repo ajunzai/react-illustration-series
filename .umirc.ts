@@ -31,8 +31,6 @@ export default defineConfig({
           'main/fibertree-update.md',
           'main/fibertree-commit.md',
           'main/render.md',
-          'main/commit.md',
-          'main/update.md',
           'main/synthetic-event.md',
         ],
       },
